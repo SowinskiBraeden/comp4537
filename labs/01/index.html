@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <main>
+            <section id="controls">
+                <div>
+                    <label id="count-label" for="count-input"></label>
+                </div>
+
+                <input
+                    id="count-input"
+                    type="number"
+                    min="3"
+                    max="7"
+                    step="1"
+                >
+
+                <button id="go-button"></button>
+                <p id="message"></p>
+            </section>
+
+            <section id="game-area"></section>
+        </main>
+
+        <script type="module" src="./js/script.js"></script>
+    </body>
+</html>
