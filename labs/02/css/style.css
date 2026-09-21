@@ -1,0 +1,173 @@
+/*
+    Chat Gipity glossed over some CSS for me
+    so I dont have to claw out my eyes looking
+    at my own hot garbage styling
+*/
+
+:root {
+    color: #172033;
+    background-color: #f5f7fb;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+}
+
+main {
+    width: min(92%, 48rem);
+    margin: 3rem auto;
+}
+
+h1 {
+    margin: 0;
+    font-size: clamp(1.8rem, 5vw, 2.6rem);
+}
+
+.landing-page {
+    padding: 3rem;
+    text-align: center;
+    background-color: white;
+    border: 1px solid #d8deea;
+    border-radius: 0.75rem;
+    box-shadow: 0 0.75rem 2rem rgb(23 32 51 / 8%);
+}
+
+.student-name {
+    margin: 0.75rem 0 2rem;
+    color: #536078;
+    font-size: 1.15rem;
+}
+
+.page-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.button-link,
+.back-link {
+    display: inline-block;
+    color: white;
+    background-color: #315fc4;
+    padding: 0.75rem 1.2rem;
+    border-radius: 0.4rem;
+    text-decoration: none;
+}
+
+.notes-page {
+    min-height: 36rem;
+    padding: 2rem;
+    background-color: white;
+    border: 1px solid #b9c4d8;
+    border-radius: 0.5rem;
+}
+
+.page-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.status {
+    min-height: 1.2rem;
+    margin: 0.4rem 0 0;
+    color: #536078;
+    white-space: nowrap;
+}
+
+.notes {
+    display: grid;
+    gap: 1rem;
+}
+
+.note {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 1rem;
+}
+
+.note textarea {
+    min-height: 7rem;
+    padding: 0.8rem;
+    color: #172033;
+    background-color: #eef3ff;
+    border: 1px solid #8398c2;
+    border-radius: 0.35rem;
+    font: inherit;
+    resize: vertical;
+}
+
+button {
+    padding: 0.65rem 1rem;
+    border: 0;
+    border-radius: 0.35rem;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.remove-button {
+    color: white;
+    background-color: #c43e45;
+}
+
+.add-button-control {
+    margin-top: 1rem;
+    color: white;
+    background-color: #2f7a42;
+}
+
+.back-link {
+    margin-top: 2rem;
+    background-color: #536078;
+}
+
+.reader-note {
+    min-height: 5rem;
+    margin: 0;
+    padding: 1rem;
+    color: white;
+    background-color: #315fc4;
+    border-radius: 0.35rem;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
+
+.empty-message {
+    color: #536078;
+}
+
+@media (max-width: 36rem) {
+    main {
+        margin: 1rem auto;
+    }
+
+    .landing-page,
+    .notes-page {
+        padding: 1.25rem;
+    }
+
+    .page-header,
+    .note {
+        grid-template-columns: 1fr;
+        flex-direction: column;
+    }
+
+    .status {
+        white-space: normal;
+    }
+
+    .remove-button {
+        justify-self: start;
+    }
+}
