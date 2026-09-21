@@ -1,4 +1,5 @@
 export const STRINGS = {
+  STUDENT_NAME:     "Braeden Sowinski",
   INDEX_TITLE:      "Lab 1: JSON, Object Constructor, localStorage",
   WRITER_LINK:      "Write Notes",
   READER_LINK:      "Read Notes",

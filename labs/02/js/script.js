@@ -189,6 +189,7 @@ class LandingPage {
     document.getElementById("page-title").textContent   = STRINGS.INDEX_TITLE;
     document.getElementById("writer-link").textContent  = STRINGS.WRITER_LINK;
     document.getElementById("reader-link").textContent  = STRINGS.READER_LINK;
+    document.getElementById("student-name").textContent = STRINGS.STUDENT_NAME;
   }
 }
 
