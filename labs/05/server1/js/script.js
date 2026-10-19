@@ -1,7 +1,7 @@
 import { STRINGS } from "../lang/messages/en/user.js";
 
 // server 2 lives on its own origin, change this one line when it moves
-const API_BASE_URL = "http://localhost:8080";
+const API_BASE_URL = "https://lab5-api.sowinski.dev";
 const SQL_ROUTE    = "/lab5/api/v1/sql";
 
 const SELECT_PATTERN = /^select\b/i;
