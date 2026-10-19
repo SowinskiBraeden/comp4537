@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <main class="lab-page">
+            <header class="page-header">
+                <h1 id="page-title"></h1>
+                <p id="student-name" class="student-name"></p>
+            </header>
+
+            <section class="panel" aria-labelledby="insert-heading">
+                <h2 id="insert-heading"></h2>
+                <p id="insert-description" class="description"></p>
+
+                <button id="insert-button" class="action-button" type="button"></button>
+            </section>
+
+            <section class="panel" aria-labelledby="query-heading">
+                <h2 id="query-heading"></h2>
+                <p id="query-description" class="description"></p>
+
+                <label id="query-label" class="query-label" for="query-input"></label>
+                <textarea id="query-input" class="query-input" rows="5"></textarea>
+
+                <button id="query-button" class="action-button" type="button"></button>
+            </section>
+
+            <section class="panel" aria-labelledby="response-heading">
+                <h2 id="response-heading"></h2>
+                <p id="status" class="status" aria-live="polite"></p>
+
+                <div id="response" class="response" aria-live="polite"></div>
+            </section>
+        </main>
+
+        <script type="module" src="./js/script.js"></script>
+    </body>
+</html>

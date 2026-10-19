@@ -1,0 +1,157 @@
+:root {
+    color: #172033;
+    background-color: #f5f7fb;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+}
+
+main {
+    width: min(92%, 52rem);
+    margin: 3rem auto;
+}
+
+h1 {
+    margin: 0;
+    font-size: clamp(1.8rem, 5vw, 2.6rem);
+}
+
+h2 {
+    margin: 0 0 0.5rem;
+    font-size: 1.25rem;
+}
+
+.page-header {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.student-name {
+    margin: 0.75rem 0 0;
+    color: #536078;
+    font-size: 1.15rem;
+}
+
+.panel {
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    background-color: white;
+    border: 1px solid #d8deea;
+    border-radius: 0.75rem;
+    box-shadow: 0 0.75rem 2rem rgb(23 32 51 / 8%);
+}
+
+.description {
+    margin: 0 0 1rem;
+    color: #536078;
+}
+
+.query-label {
+    display: block;
+    margin-bottom: 0.4rem;
+    font-weight: 600;
+}
+
+.query-input {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    color: #172033;
+    background-color: #eef3ff;
+    border: 1px solid #8398c2;
+    border-radius: 0.35rem;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 1rem;
+    resize: vertical;
+}
+
+button {
+    padding: 0.65rem 1rem;
+    border: 0;
+    border-radius: 0.35rem;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.action-button {
+    color: white;
+    background-color: #315fc4;
+}
+
+.action-button:disabled {
+    background-color: #8398c2;
+    cursor: progress;
+}
+
+.status {
+    min-height: 1.2rem;
+    margin: 0 0 1rem;
+    color: #536078;
+}
+
+.response {
+    overflow-x: auto;
+}
+
+.result-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.result-table th,
+.result-table td {
+    padding: 0.6rem 0.8rem;
+    border: 1px solid #d8deea;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.result-table th {
+    color: white;
+    background-color: #315fc4;
+}
+
+.result-table tbody tr:nth-child(even) {
+    background-color: #eef3ff;
+}
+
+.success-message {
+    margin: 0;
+    color: #2f7a42;
+    font-weight: 600;
+}
+
+.error-message {
+    margin: 0;
+    color: #c43e45;
+    font-weight: 600;
+    overflow-wrap: anywhere;
+}
+
+.empty-message {
+    margin: 0;
+    color: #536078;
+}
+
+@media (max-width: 36rem) {
+    main {
+        margin: 1rem auto;
+    }
+
+    .panel {
+        padding: 1.25rem;
+    }
+
+    .action-button {
+        width: 100%;
+    }
+}
